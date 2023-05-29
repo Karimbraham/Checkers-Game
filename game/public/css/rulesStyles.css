@@ -1,0 +1,54 @@
+.carousel {
+  position: relative;
+  margin-top: 8px;
+  border: 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel__item {
+  height: 145px;
+  display: none;
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
+  width: 75%;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgb(50, 49, 47);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.rules {
+  margin-top: 5px;
+}
+
+.ruleCard {
+  width: 100%;
+  background-color: rgb(33, 32, 29);
+  border: none;
+}
+
+.ruleCard-body {
+  color: rgb(181, 180, 179);
+  text-align: center;
+}

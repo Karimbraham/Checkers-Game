@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/boardStyles.css" />
+    <link rel="stylesheet" href="css/rulesStyles.css">
+    <title>Checkers App</title>
+  </head>
+  <body>
+    <div class="container">
+    <!-- -----------------GAMEBOARD---------------- -->
+    <div class="board-container">
+      <div class="game-Board">
+    <table>
+      <tr>
+        <tr>
+          <td class="whiteSquare"><div class="red-piece" id="0"></div></td>
+          <td><div class="red-piece" id="1"></div></td>
+          <td class="whiteSquare"><div class="red-piece" id="2"></div></td>
+          <td><div class="red-piece" id="3"></div></td>
+          <td class="whiteSquare"><div class="red-piece" id="4"></div></td>
+        </tr>
+        <tr>
+          <td><div class="red-piece" id="5"></div></td>
+          <td class="whiteSquare"><div class="red-piece" id="6"></div></td>
+          <td><div class="red-piece" id="7"></div></td>
+          <td class="whiteSquare"><div class="red-piece" id="8"></div></td>
+          <td><div class="red-piece" id="9"></div></td>
+        </tr>
+        <tr>
+          <td class="whiteSquare"><div class="red-piece" id="10"></div></td>
+          <td><div class="red-piece" id="11"></div></td>
+          <td class="whiteSquare"></td>
+          <td><div class="black-piece" id="13"></div></td>
+          <td class="whiteSquare"><div class="black-piece" id="14"></div></td>
+        </tr>
+        <tr>
+          <td><div class="black-piece" id="15"></div></td>
+          <td class="whiteSquare"><div class="black-piece" id="16"></div></td>
+          <td><div class="black-piece" id="17"></div></td>
+          <td class="whiteSquare"><div class="black-piece" id="18"></div></td>
+          <td><div class="black-piece" id="19"></div></td>
+        </tr>
+        <tr>
+          <td class="whiteSquare"><div class="black-piece" id="20"></div></td>
+          <td><div class="black-piece" id="21"></div></td>
+          <td class="whiteSquare"><div class="black-piece" id="22"></div></td>
+          <td><div class="black-piece" id="23"></div></td>
+          <td class="whiteSquare"><div class="black-piece" id="24"></div></td>
+        </tr>
+      </tr>
+    </table>
+    <div class="game-info">
+      <div class="red-turn-text">
+        Reds
+      </div>
+      <p class="divider">|</p>
+      <div class="black-turn-text">
+        Blacks
+      </div>
+    </div>
+  </div>
+    </div>
+ 
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1 id="room-name"><i class="fas fa-smile"></i></h1>
+        <a href="index.html" class="btn">Leave Room</a>
+      </header>
+      <main class="chat-main">
+        <div class="chat-messages"></div>
+        <div class="chat-sidebar">
+          <h3><i class="fas fa-users"></i> Users</h3>
+          <ul id="users"></ul>
+        </div>
+      </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
+ 
+<div class="rules">
+  <div class="carousel">
+    <div class="carousel__item">
+      <div class="ruleCard card mb-3">
+        <div class="row no-gutters">
+          <div class="col-9">
+            <div class="ruleCard-body card-body">
+              <h5 class="card-title">King Movement</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, magnam tempora eaque fuga veniam eaque ducimus maiores? Voluptatum, eos aspernatur?</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="img/king-mov.png" class="img-fluid" alt="rule_img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__item">    <div class="ruleCard card mb-3">
+      <div class="row no-gutters">
+        <div class="col-9">
+          <div class="ruleCard-body card-body">
+            <h5 class="card-title">Piece Movement</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, magnam tempora eaque fuga veniam eaque ducimus maiores? Voluptatum, eos aspernatur?</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <img src="img/piece_mov.png" class="img-fluid" alt="rule_img">
+        </div>
+      </div>
+    </div></div>
+    <div class="carousel__item">    <div class="ruleCard card mb-3">
+        <div class="row no-gutters">
+          <div class="col-9">
+            <div class="ruleCard-body card-body">
+              <h5 class="card-title">Win Condition</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, magnam tempora eaque fuga veniam eaque ducimus maiores? Voluptatum, eos aspernatur?</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="img/win-con.png" class="img-fluid" alt="rule_img">
+          </div>
+        </div>
+      </div></div>
+  </div>
+</div>
+    </div>
+    
+  </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+      integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rules.js"></script>
+  </body>
+</html>
