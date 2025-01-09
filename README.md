@@ -37,7 +37,4 @@ This is a simple **online multiplayer checkers game** where you can play with fr
 - Add rankings and leaderboards.
 - Enhance game animations and UI.
 - Allow spectators to watch ongoing games.
-
----
-
-Enjoy playing checkers with friends!  
+ 
